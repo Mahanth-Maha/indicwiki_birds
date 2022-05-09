@@ -49,25 +49,29 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
 
 - This folder contains various datasets (final and intermediate), and the implementations as to how they were obtained. Different formats of the dataset are present as follows (like csv, excel etc):
   - _Birds.csv_  → This is a csv file containing all the data related to birds.
-  - _Birds.html_  → HTML code of the bird articles.
+  - _Birds.html_  → HTML sweetviz report of the Bird dataset.
   - _Birds.pkl_  → This pickle file contains birds data.
   - _Birds.xlsx_  → Excel file containing data of all the 12000+ birds including all their attributes values.
   - _Birds\_Dataset\_English\_only.xlsx_  → Excel file containing data of all the birds only in english
   - _Dataset\_final.xlsx_     → Final Dataset of all the birds including both english and telugu translated values of attributes.
- 
+
 ### scrape_new_data
 
 > Github folder Link: <https://github.com/indicwiki-iiit/Birds/tree/main/curDir/scrape_new_data>
 
 - This folder contains implementation and datasets corresponding to newly scraped data from different websites. There are 2 folders within this folder they are:
- 
+
   - Translation  → Contains all the datasets that got translated columns wise in the form of csv, excel, pkl etc.
   - assets   → Contains all the datasets that are scraped from websites and put into an excel sheet and csv files.
     - all the intermediate files are saved in 3 types i.e,
+   
    > CSV
+   
    > EXCEL
+   
    > PICKLE
-  and sometimes Log files to log events while scarping.
+  
+  and sometimes `Log` files to log events while scarping.
 
 - This folder also contains the code used to scrape the data from different websites.
   - Dibird\_Scrape\_Optim.py   → This is a python file used to scrape breeding region, Old Latin Name etc attributes of birds. [dibird.com](https://dibird.com/)
@@ -75,6 +79,32 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
   - Eol\_Scraper\_Optim.py   → This is a python file used to scrape locomotion, Habitat etc attributes of birds. [eol.org](https://eol.org/)
   - Iucn_Scraper_Optim.py   → This is a python file used to scrape the data of birds. [iucn.org](https://www.iucn.org/)
   - scrape_wikidata.ipynb   → This is a python Notebook file used to scrape the taxonomy data of the birds.
+
+### assets
+
+> Github folder Link: <https://github.com/indicwiki-iiit/Birds/tree/main/curDir/>
+
+- This folder contains datasets corresponding to newly scraped data from different websites in units and code which can be recreated using python notebooks and merge them into a single dataset.
+	- DataZone → This folder contains data of birds from the DataZone site, in which we got all then unique 12000+ birds to work on.
+	- DCPP_Group_Assignment → This folder is a clone of github project named DCPP_Group_Assignment, which has code to scarpe data from wikipedia.
+
+- Each of the below folder contains the data in 3 diiferent  formats namely csv ,excel and pickle to make them compatiable with all string encoding formats and softwares such as Microsoft excel , libre Office and etc.
+
+	- ebird → This folder contains data scraped from the ebird site
+	- rescrape → This folder contains data scraped from the ebird site, rescaped. 
+	- rescrape_dibird → This folder contains data scraped from the dibird site
+	- rescrape_eol → This folder contains data scraped from the eol site
+	- rescrape_iucn → This folder contains data scraped from the iucn site
+	- rescrape_wiki → This folder contains data scraped from the wikipedia site
+	- Wikidata_Ultimate_Source → This folder contains data scraped from the Wikidata site
+
+
+### Translation
+
+> Github folder Link: <https://github.com/indicwiki-iiit/Birds/tree/main/curDir/>
+
+- This folder contains the backups, for every big progress in translation in dataset
+	- Kaggle_out This folder contains all the out puts from the kaggle.com , which provides a GPU resource which speeds up translation.
 
 ### Template
 
