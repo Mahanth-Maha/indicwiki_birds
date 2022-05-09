@@ -48,9 +48,6 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
 
 > Github folder Link: https://github.com/indicwiki-iiit/Birds/tree/main/curDir/data
 - This folder contains various datasets (final and intermediate), and the implementations as to how they were obtained. Different formats of the dataset are present as follows (like csv, excel etc):
-	- _<File>_ 		→ <Description>.
-	- _<File>_ 		→ <Description>.
-	- _<File>_ 		→ <Description>.
 	- _Birds.csv_ → This is a csv file containing all the data related to birds.
 	- _Birds.html_ → HTML code of the bird articles.
 	- _Birds.pkl_ → This pickle file contains birds data.
