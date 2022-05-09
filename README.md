@@ -47,7 +47,7 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
 ### data
 
 > Github folder Link: https://github.com/indicwiki-iiit/Birds/tree/main/curDir/data
-- This folder contains various datasets (final and intermediate), and the implementations as to how they were obtained. The python scripts in this folder are described as follows:
+- This folder contains various datasets (final and intermediate), and the implementations as to how they were obtained. Different formats of the dataset are present as follows (like csv, excel etc):
 	- _<File>_ 		→ <Description>.
 	- _<File>_ 		→ <Description>.
 	- _<File>_ 		→ <Description>.
@@ -61,15 +61,16 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
 ### scrape_new_data
 
 > Github folder Link: https://github.com/indicwiki-iiit/Birds/tree/main/curDir/scrape_new_data
-- This folder contains implementation and datasets corresponding to newly scraped data from Birds.org.in. The python scripts in this folder are described as follows:
-	- _data\_cleaning.py_ → This file contains implementation which handles basic data cleaning, such as making missing values uniform, identifying edge cases and removing unwanted attributes.
-	- _extract\_info.py_ → This file contains the actual scraping implementation for scraping the complete data for all Birds in Andhra Pradesh and Telangana. Similar to `zeroMain.py`, this file can be provided with command line arguments for scraping data for a particular subsegment of Birds. For example `python3 extract_info.py 30 50` would scrape data for Birds in rows 30-50 in intermediate dataframe `Birds_id_name_url_dataframe.pkl` (inclusive). By default, data is scraped for all Birds (case where no command line arguments are provided, such as `python3 extract_info.py`).
-	- _extract\_urls.py_ → This file contains implementation for web crawling and obtaining, storing urls for each school from the two states, so as to minimize overhead while actually scraping content from them.
-	- _notability\_check.py_ → This file filters out non-sparse rows (well populated rows) and stores them separately, as these can be highlighted while generating articles.
-- The pickle files and datasets of this folder are described as follows:
-	- _school\_urls\_dict.pkl_ → This file consists of a dictionary, where school UDISE codes are the keys and that school's url in the above website is the corresponding value.
-	- _Birds\_id\_name\_url\_dataframe.pkl_ → This pickle file consists of an intermediate dataframe, where each row contains a school's UDISE code, its corresponding name, and its url in Birds.org.in. 
-	- _Birds\_id\_name\_url\_dataframe.xlsx_ → This excel file consists of the same intermediate dataframe above, in excel format.
+- This folder contains implementation and datasets corresponding to newly scraped data from different websites. There are 2 folders within this folder they are:
+	
+	- Translation → Contains all the datasets that got translated columns wise in the form of csv, excel, pkl etc.
+	- assets → Contains all the datasets that are scraped from websites and put into an excel sheet and csv files.
+-This folder also contains the code used to scrape the data from different websites.
+	- Dibird\_Scrape\_Optim.py → This is a python file used to scrape breeding region, Old Latin Name etc attributes of birds. (https://dibird.com/)
+	- _Ebird\_Scraper\_Optim.py_ → This is a python file used to scrape the data of birds. (https://ebird.org/home)
+	- Eol\_Scraper\_Optim.py → This is a python file used to scrape locomotion, Habitat etc attributes of birds. (https://eol.org/pages/695)
+	- Iucn_Scraper_Optim.py → This is a python file used to scrape the data of birds. (https://www.iucn.org/)
+	- scrape_wikidata.ipynb → This is a python file used to scrape the taxonomy data of the birds. 
 	- _Birds\_org\_data.xlsx_ → This excel file contains the complete dataset for all the data scraped from all the Birds.
 	- _Birds\_org\_data\_part\_i.pkl_ → These 3-part pickle files contain the same information as in excel file above, but have been split to 3 parts due to size constraints.
 	- _notable\_Birds\_org\_data.pkl_ → This pickle file consists of data corresponding to notable Birds alone (about 14% of the total data collected - for the states Andhra Pradesh and Telangana).
