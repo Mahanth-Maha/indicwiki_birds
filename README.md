@@ -91,14 +91,6 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
 	- _translated\_dataset\_notable\_Birds.pkl_ → This dataset consists of all attributes which require translation while rendering in articles. There are about 15 such attributes and their corresponding english and telugu versions are present here (summing up to 30). Note that these were collected only for notable Birds.
 	- _translated\_dataset\_notable\_Birds.xlsx_ → This excel file consists of the same dataframe above, in excel format.
 
-### template
-
-> Github folder Link: https://github.com/indicwiki-iiit/Birds/tree/main/curDir/template
-- This folder .
-	- _new\_teluguDFtext.j2_ → This file consists of the improved template to generate wikitext provided a school's data, corresponding to latest dataset (from Birds.org.in)
-	- _teluguDFtext.j2_ → This file consists of the template to generate the wikitext of a given school's data (based on old dataset - oneKB)
-	- _teluguTitle.j2_ → This jinja2 template file generates the title for a given school.
-
 ### createMgnt.py
 
 > Github file Link: https://github.com/indicwiki-iiit/Birds/blob/main/curDir/createMgnt.py
@@ -164,3 +156,8 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
 
 You can find the sample article [here](https://docs.google.com/document/d/1zx1IG2G8MDLfH21ofY1Z8AEoV-bv2KEe8bbjNDWFsxc/edit)
 
+### Template
+
+> Github folder Link: https://github.com/indicwiki-iiit/Birds/tree/main/curDir/Template
+- This folder .
+	- _birds.j2_ → This file consists of the improved template to generate wikitext provided a bird's data, corresponding to latest dataset 
