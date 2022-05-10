@@ -78,7 +78,8 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
   - _Ebird\_Scraper\_Optim.py_  → This is a python file used to scrape the data of birds. [ebird.org](https://ebird.org/home)
   - Eol\_Scraper\_Optim.py   → This is a python file used to scrape locomotion, Habitat etc attributes of birds. [eol.org](https://eol.org/)
   - Iucn_Scraper_Optim.py   → This is a python file used to scrape the data of birds. [iucn.org](https://www.iucn.org/)
-  - scrape_wikidata.ipynb   → This is a python Notebook file used to scrape the taxonomy data of the birds.
+  - scrape_wikidata.ipynb   → This is a python Notebook file used to scrape the taxonomy data of the birds and the images of the birds.
+  - 
 
 ### assets
 
