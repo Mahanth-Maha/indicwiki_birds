@@ -74,13 +74,13 @@ It can be found [here](https://github.com/indicwiki-iiit/Birds/tree/main/curDir)
   and sometimes `Log` files to log events while scarping.
 
 - This folder also contains the code used to scrape the data from different websites.
-  - Dibird\_Scrape\_Optim.py   → This is a python file used to scrape breeding region, Old Latin Name etc attributes of birds. [dibird.com](https://dibird.com/)
-  - _Ebird\_Scraper\_Optim.py_  → This is a python file used to scrape the data of birds. [ebird.org](https://ebird.org/home)
-  - Eol\_Scraper\_Optim.py   → This is a python file used to scrape locomotion, Habitat etc attributes of birds. [eol.org](https://eol.org/)
-  - Iucn_Scraper_Optim.py   → This is a python file used to scrape the data of birds. [iucn.org](https://www.iucn.org/)
-  - scrape_wikidata.ipynb   → This is a python Notebook file used to scrape the taxonomy data of the birds and the images of the birds.
-  - 
-
+  - Dibird\_Scrape\_Optim.py   → This is a python file used to scrape breeding region, Old Latin Name etc attributes of birds, Tools used are BeautifulSoup and Selenium. [dibird.com](https://dibird.com/)
+  - _Ebird\_Scraper\_Optim.py_  → This is a python file used to scrape the data of birds, Tool used is BeautifulSoup. [ebird.org](https://ebird.org/home)
+  - Eol\_Scraper\_Optim.py   → This is a python file used to scrape locomotion, Habitat etc attributes of birds, Tool used is BeautifulSoup [eol.org](https://eol.org/)
+  - Iucn_Scraper_Optim.py   → This is a python file used to scrape the data of birds,Tool used is Selenium. [iucn.org](https://www.iucn.org/)
+  - scrape_wikidata.ipynb   → This is a python Notebook file used to scrape the taxonomy data of the birds and the images of the birds, Tools used are BeautifulSoup and Selenium.
+  
+  
 ### assets
 
 > Github folder Link: <https://github.com/Mahanth-Maha/indicwiki_birds/tree/main/curDir/scrape_data/assets>
